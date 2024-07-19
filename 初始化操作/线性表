@@ -22,7 +22,7 @@ void insert(linklist* L)//插入元素
 	int n = 0;
 	for (n = 0; n < max1; n++)
 	{
-		L->data[n] = n + 10;
+		L->data[n] = n ;
 		L->length++;
 	}
 	
