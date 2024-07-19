@@ -19,6 +19,12 @@ void init(linklist* L)
 
 void insert(linklist* L)//插入元素
 {
+	if (L->length == 0)
+	{
+		printf("error\n");
+		exit(-1);
+	}
+	
 	int n = 0;
 	for (n = 0; n < max1; n++)
 	{
