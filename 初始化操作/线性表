@@ -22,14 +22,20 @@ void insert(linklist* L)//插入元素
 	int n = 0;
 	for (n = 0; n < max1; n++)
 	{
-		L->data[n] = n;
+		L->data[n] = n + 10;
 		L->length++;
 	}
+	
 	puts("input sequence:");
 	for (n = 0; n < max1; n++)
 		printf("%d ", L->data[n]);
 	printf("\n");
+	printf("input length %d\n", L->length);
+
+
 }
+
+
 
 int main()
 {
@@ -37,11 +43,14 @@ int main()
 	init(&L);
 	insert(&L);
 
+
 	int n;
 	puts("output sequence:");
 	for (n = 0; n < max1; n++)
 		printf("%d ", L.data[n]);
 	printf("\n");
+	printf("output length %d\n", L.length);
 
 	return 0;
 }
+
