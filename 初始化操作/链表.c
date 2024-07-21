@@ -6,11 +6,10 @@ typedef struct node {
 	struct node* next;
 }Lnode;
 
-
 Lnode* init()
 {
 	Lnode* head = (Lnode*)malloc(sizeof(Lnode));
-	head -> data = 0;
+	head->data = 0;
 	head->next = NULL;
 
 
@@ -23,25 +22,42 @@ void insertbefore(Lnode* head)
 	for (; n < 10; n++)
 	{
 		Lnode* L = (Lnode*)malloc(sizeof(Lnode));
-		L->data = 10-n;
+		L->data = 10 - n;
 		L->next = head->next;
 		head->next = L;
 	}
 }
 
+
+
+
 int main()
 {
-    Lnode* head = init();
+	Lnode* head = init();
 	insertbefore(head);
 
 	int n = 0;
 	Lnode* L = head->next;
 	puts("input sequence");
-	for (; n < 10; n++)
+	while (L->next != NULL)
 	{
 		printf("%d ", L->data);
 		L = L->next;
 	}
+	printf("%d ", L->data);
+	puts("\n");
+
+
+
+	L = head->next;
+	puts("output sequence");
+	while (L->next != NULL)
+	{
+		printf("%d ", L->data);
+		L = L->next;
+	}
+	printf("%d ", L->data);
+
 
 	return 0;
 }
