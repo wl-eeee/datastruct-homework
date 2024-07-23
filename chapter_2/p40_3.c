@@ -1,4 +1,4 @@
-#include "head.h"
+#include "head.h"//3和5一样
 //链表基本操作
 
 typedef struct node {
