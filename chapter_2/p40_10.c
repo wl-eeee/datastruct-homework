@@ -76,14 +76,14 @@ Lnode* function(Lnode* Lhead)
 		else
 		{
            		 Lnode* Q2in = (Lnode*)malloc(sizeof(Lnode));
-			Q2in->data = L->data;
- 			Q2in->next = NULL;
+			 Q2in->data = L->data;
+ 			 Q2in->next = NULL;
 			 Q2->next = Q2in;
 			 Q2 = Q2->next;
 
-	L = L->next;
-	n++;
-
+			 L = L->next;
+			 n++;
+			
 		}
 	}
 
