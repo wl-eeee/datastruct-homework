@@ -1,5 +1,5 @@
 #include "head.h"
-//线性表基本操作
+//顺序表基本操作
 
 #define max1 20
 
