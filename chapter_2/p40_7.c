@@ -31,7 +31,7 @@ void insertbefore(Lnode* Lhead)
 Lnode* function(Lnode* Lhead)
 {
 	//先判断头结点 为了简单 直接采用Lhead->next
-	if (Lhead->next ->data >= 2 && Lhead->next->data <= 10)
+	if (Lhead->next ->data >= 2 && Lhead->next->data <= 5)
 	{
 		Lnode* Lout = Lhead->next;
 		Lhead->next = Lhead->next->next;
@@ -41,7 +41,7 @@ Lnode* function(Lnode* Lhead)
 	Lnode *L = Lhead->next;
 	while (L->next != NULL)//还是这个条件 不要用其它的判定条件 上一个已经判定过了满足要求 每轮判定的都是L的下一个 
 	{
-		if (L->next->data >= 2 && L->next->data <= 10)
+		if (L->next->data >= 2 && L->next->data <= 5)
 		{
 			Lnode *Lout = L->next;
 			L->next = L->next->next;
